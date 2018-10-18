@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0">
-	<!--build:css css/style.css-->
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0">
+		<!--build:css css/style.css-->
 		<link rel="stylesheet" href="./css/index.css">
 		<link rel="stylesheet" href="./css/reset.css">
-	<!-- endbuild -->
-</head>
-<body>
-	<section class="yxs-swiper">
-		<div class="swiper-container">
-			<div class="swiper-slide">1</div>
-			<div class="swiper-slide" style="background:skyblue">2</div>
-			<div class="swiper-slide" >3</div>
-			<div class="swiper-slide" style="background:skyblue">4</div>
-			<div class="swiper-slide">5</div>
-			<div class="swiper-slide" style="background:skyblue">6</div>
-		</div>
-	</section>
-	<script src="./js/main.js"></script>
-	<script src="./index.js"></script>
-	<!--build:js js/build.min.js -->
-	<!-- endbuild -->
-</body>
+		<!-- endbuild -->
+	</head>
+
+	<body>
+		<section class="yxs-swiper swiper-one" style="width:300px">
+			<div class="swiper-container">
+				<div class="swiper-slide">1</div>
+				<div class="swiper-slide" style="background:skyblue">2</div>
+				<div class="swiper-slide">3</div>
+				<div class="swiper-slide" style="background:skyblue">4</div>
+				<div class="swiper-slide">5</div>
+				<div class="swiper-slide" style="background:skyblue">6</div>
+			</div>
+			<div class="swiper-prev-btn swiper-btn">前</div>
+			<div class="swiper-next-btn swiper-btn">后</div>
+			<div class="swiper-pagination"></div>
+		</section>
+		<section class="yxs-swiper swiper-two">
+			<div class="swiper-container">
+				<div class="swiper-slide">1</div>
+				<div class="swiper-slide" style="background:skyblue">2</div>
+				<div class="swiper-slide">3</div>
+				<div class="swiper-slide" style="background:skyblue">4</div>
+				<div class="swiper-slide">5</div>
+				<div class="swiper-slide" style="background:skyblue">6</div>
+			</div>
+		</section>
+		<script src="./index.js" type="module"></script>
+		<!--build:js js/build.min.js -->
+		<!-- endbuild -->
+	</body>
+
 </html>
