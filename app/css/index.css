@@ -9,7 +9,8 @@
     width: 100%;
     display: flex;
     z-index: 1;
-    height: 100%; }
+    height: 100%;
+    transition-timing-function: ease-in-out; }
     .yxs-swiper .swiper-container .swiper-slide {
       width: 100%;
       flex-shrink: 0;
@@ -22,10 +23,48 @@
       font-size: 50px;
       color: #fff; }
   .yxs-swiper .swiper-btn {
-    position: absolute;
+    position: absolute; }
+  .yxs-swiper .swiper-prev-btn, .yxs-swiper .swiper-next-btn {
+    padding: 10px;
+    cursor: pointer;
     top: 50%;
     transform: translateY(-50%); }
-  .yxs-swiper .swiper-prev-btn {
-    left: 10px; }
   .yxs-swiper .swiper-next-btn {
-    right: 10px; }
+    right: 0; }
+  .yxs-swiper .swiper-next-horization {
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%); }
+  .yxs-swiper .swiper-prev-horization {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .yxs-swiper .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .yxs-swiper .swiper-pagination ul {
+      display: flex; }
+      .yxs-swiper .swiper-pagination ul li {
+        margin: 5px; }
+        .yxs-swiper .swiper-pagination ul li .dot {
+          width: 10px;
+          height: 10px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: block;
+          cursor: pointer; }
+  .yxs-swiper .swiper-pagination-horizontal {
+    bottom: auto;
+    height: 100%;
+    right: 10px;
+    width: auto;
+    top: 0; }
+    .yxs-swiper .swiper-pagination-horizontal ul {
+      display: block;
+      flex-wrap: wrap; }
